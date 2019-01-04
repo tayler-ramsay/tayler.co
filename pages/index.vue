@@ -25,8 +25,17 @@ export default {
   },
   head() {
     return {
-      title: "Home Page"
+      title: "Tayler.co",
+      meta: [
+        { name: "twitter:title", content: "Filler content" },
+        { name: "twitter:description", content: "tayler.co learning as I go" },
+        { name: "twitter:image", content: "https://i.imgur.com/UYP2umJ.png" },
+        { name: "twitter:card", content: "summary_large_image" }
+      ]
     };
+  },
+  async fetch({ store }) {
+    await store.dispatch("posts/fetchAllPosts");
   },
   computed: {
     posts() {
