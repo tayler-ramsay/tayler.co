@@ -4,14 +4,6 @@
       <h1 class="title">{{post.title}}</h1>
       <p>{{post.body}}</p>
     </article>
-    <!-- <aside>
-      <h3>Posts you might enjoy</h3>
-      <ul>
-        <li v-for="related in relatedPosts">
-          <nuxt-link :to="{name: 'posts-id', params: {id: related.id}}">{{related.title}}</nuxt-link>
-        </li>
-      </ul>
-    </aside>-->
   </div>
 </template>
 
@@ -31,7 +23,6 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
-     // post: {}
     };
   },
     async fetch({ store, params }) {

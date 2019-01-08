@@ -7,8 +7,8 @@
       <div class="links">
         <nuxt-link
           v-for="post in posts"
+          :key="post.id"
           :to="{name: 'posts-id', params: {id: post.id}}"
-          key="post.id"
           class="button--grey"
         >{{post.title}}</nuxt-link>
       </div>
@@ -60,7 +60,7 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: #35525e;
   letter-spacing: 1px;
 }
 
