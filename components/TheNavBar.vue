@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="logo">
-      <nuxt-link :to="{name: 'index'}" class="logo text-lg">Pavone</nuxt-link>
+      <nuxt-link :to="{name: 'index'}" class="logo text-lg">Tayler.co</nuxt-link>
       <span class="subheader">A Vue App in Nuxt</span>
     </div>
     <div>

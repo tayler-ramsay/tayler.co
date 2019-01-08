@@ -1,8 +1,11 @@
 <template>
-  <div>
-    <ProductList/>
-    <hr/>
-    <ShoppingCart/>
+  <div class="container">
+    <div class="item">
+      <ProductList/>
+    </div>
+    <div class="item">
+      <ShoppingCart/>
+    </div>
   </div>
 </template>
 
@@ -11,7 +14,7 @@ import ProductList from "@/components/ProductList";
 import ShoppingCart from "@/components/ShoppingCart";
 
 export default {
-  layout: 'shoppingCart',
+  layout: "shoppingCart",
   components: {
     ProductList,
     ShoppingCart
@@ -19,5 +22,13 @@ export default {
 };
 </script>
 
-</style>
 <style scoped>
+.container {
+  display: grid;
+  grid-template-columns: 400px auto;
+  grid-gap: 30px;
+}
+.item {
+
+}
+</style>
