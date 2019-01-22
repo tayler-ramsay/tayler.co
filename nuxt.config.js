@@ -42,6 +42,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/axios',
+    { src: '~/plugins/vue-notifications', ssr: false },
     { src: '~/plugins/currency', ssr: false }
   ],
 

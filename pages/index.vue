@@ -2,8 +2,7 @@
   <section class="container">
     <div>
       <logo/>
-      <h1 class="title">nuxt-funds</h1>
-      <h2 class="subtitle">My premium Nuxt.js project</h2>
+      <h1 class="title">Recent Posts</h1>
       <div class="links">
         <nuxt-link
           v-for="post in posts"

@@ -1,12 +1,12 @@
 <template>
   <nav class="nav">
     <div class="logo">
-      <nuxt-link :to="{name: 'index'}" class="logo text-lg">Tayler.co</nuxt-link>
-      <span class="subheader">A Vue App in Nuxt</span>
+      <nuxt-link :to="{name: 'index'}" class="logo text-lg">Tayler Ramsay</nuxt-link>
+     <span>I am a frontend developer working at <a href="Pavone.net">Pavone Marketing</a></span>
     </div>
-    <div>
+    <!-- <div>
       <nuxt-link :to="{name: 'cart'}" class="text-lg">Cart</nuxt-link>
-    </div>
+    </div> -->
   </nav>
 </template>
 

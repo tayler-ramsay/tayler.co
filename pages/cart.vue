@@ -14,6 +14,7 @@ import ProductList from "@/components/ProductList";
 import ShoppingCart from "@/components/ShoppingCart";
 
 export default {
+  transition:'test',
   layout: "shoppingCart",
   components: {
     ProductList,
