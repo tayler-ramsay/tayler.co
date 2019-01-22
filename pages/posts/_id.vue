@@ -4,10 +4,12 @@
       <h1 class="title">{{post.title}}</h1>
       <p>{{post.body}}</p>
     </article>
+    <StaticList/>
   </div>
 </template>
 
 <script>
+import StaticList from '@/components/StaticList'
 export default {
   head() {
     return {
@@ -28,11 +30,14 @@ export default {
     async fetch({ store, params }) {
     await store.dispatch("posts/fetchPost", params.id);
   },
-   computed: {
-      post () {
-        return this.$store.state.posts.all.find(post => post.id === Number(this.id))
-      }
+  computed: {
+    post () {
+      return this.$store.state.posts.all.find(post => post.id === Number(this.id))
     }
+  },
+  components:{
+    StaticList
+  }
 }
 </script>
 
