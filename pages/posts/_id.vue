@@ -4,10 +4,15 @@
       <h1 class="title">{{post.title}}</h1>
       <p>{{post.body}}</p>
     </article>
+<<<<<<< HEAD
+=======
+    <StaticList/>
+>>>>>>> ba1cb8bb257eab0f9e842f4dc80d3d09f22e9df8
   </div>
 </template>
 
 <script>
+import StaticList from '@/components/StaticList'
 export default {
   head() {
     return {
@@ -22,14 +27,19 @@ export default {
   },
   data() {
     return {
+<<<<<<< HEAD
       id: this.$route.params.id
       // post: {}
+=======
+      id: this.$route.params.id,
+>>>>>>> ba1cb8bb257eab0f9e842f4dc80d3d09f22e9df8
     };
   },
   async fetch({ store, params }) {
     await store.dispatch("posts/fetchPost", params.id);
   },
   computed: {
+<<<<<<< HEAD
     post() {
       return this.$store.state.posts.all.find(
         post => post.id === Number(this.id)
@@ -37,6 +47,16 @@ export default {
     }
   }
 };
+=======
+    post () {
+      return this.$store.state.posts.all.find(post => post.id === Number(this.id))
+    }
+  },
+  components:{
+    StaticList
+  }
+}
+>>>>>>> ba1cb8bb257eab0f9e842f4dc80d3d09f22e9df8
 </script>
 
 <style scoped>

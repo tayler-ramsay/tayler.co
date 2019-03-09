@@ -2,13 +2,12 @@
   <section class="container">
     <div>
       <logo/>
-      <h1 class="title">nuxt-funds</h1>
-      <h2 class="subtitle">My premium Nuxt.js project</h2>
+      <h1 class="title">Recent Posts</h1>
       <div class="links">
         <nuxt-link
           v-for="post in posts"
+          :key="post.id"
           :to="{name: 'posts-id', params: {id: post.id}}"
-          key="post.id"
           class="button--grey"
         >{{post.title}}</nuxt-link>
       </div>
@@ -60,7 +59,7 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: #35525e;
   letter-spacing: 1px;
 }
 
