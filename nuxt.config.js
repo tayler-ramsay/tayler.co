@@ -2,14 +2,8 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
-  
-  generate:{
-    routes:[
-      'posts/balut',
-      'posts/whereIsIt',
-      'posts/how'
-    ]
-  },
+
+
   /*
   ** Headers of the page
   */
@@ -67,7 +61,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }
