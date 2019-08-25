@@ -3,7 +3,7 @@
     <div class="logo">
       <nuxt-link :to="{name: 'index'}" class="logo text-lg">Tayler Ramsay</nuxt-link>
       <span>
-        I am a frontend developer working at
+        I am a frontend developer working for
         <a href="#">Versatile Credit</a>
       </span>
     </div>
