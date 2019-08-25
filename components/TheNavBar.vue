@@ -2,11 +2,14 @@
   <nav class="nav">
     <div class="logo">
       <nuxt-link :to="{name: 'index'}" class="logo text-lg">Tayler Ramsay</nuxt-link>
-     <span>I am a frontend developer working at <a href="Pavone.net">Pavone Marketing</a></span>
+      <span>
+        I am a frontend developer working at
+        <a href="#">Versatile Credit</a>
+      </span>
     </div>
     <!-- <div>
       <nuxt-link :to="{name: 'cart'}" class="text-lg">Cart</nuxt-link>
-    </div> -->
+    </div>-->
   </nav>
 </template>
 
@@ -17,6 +20,6 @@ export default {};
 <style scoped>
 nav {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 </style>
